@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profil Saya · RuangHadir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/app.css">
+    <script src="assets/app.js" defer></script>
+</head>
+<body class="app-page">
+    <aside class="sidebar" id="sidebar">
+        <a class="brand" href="dashboard.html"><span class="brand-mark">R</span><span>ruang<span class="brand-soft">hadir</span></span></a>
+        <div class="workspace-label">WORKSPACE</div>
+        <div class="workspace"><span class="workspace-dot"></span><span><strong>Tim utama</strong><small>Workspace aktif</small></span><span class="workspace-menu">⌄</span></div>
+        <nav class="main-nav" aria-label="Navigasi utama">
+            <span class="nav-label">MENU</span>
+            <a class="nav-link" href="dashboard.html"><span class="nav-icon">◫</span><span>Ikhtisar</span></a>
+            <a class="nav-link" href="attendance.html"><span class="nav-icon">◷</span><span>Kehadiran</span></a>
+            <a class="nav-link" href="leave.html"><span class="nav-icon">▤</span><span>Izin &amp; cuti</span></a>
+            <a class="nav-link" href="employees.html"><span class="nav-icon">♧</span><span>Karyawan</span></a>
+            <a class="nav-link" href="reports.html"><span class="nav-icon">▥</span><span>Laporan</span></a>
+        </nav>
+        <div class="sidebar-bottom">
+            <div class="sidebar-help"><span class="help-icon">?</span><div><strong>Butuh bantuan?</strong><small>Hubungi admin tim kamu</small></div></div>
+            <a class="user-mini active" href="profile.html"><span class="avatar">A</span><span class="user-mini-copy"><strong>Admin RuangHadir</strong><small>Administrator</small></span><span class="more">···</span></a>
+        </div>
+    </aside>
+
+    <div class="main-shell">
+        <header class="topbar">
+            <button class="icon-button menu-toggle" data-menu-toggle aria-label="Buka menu">☰</button>
+            <div class="breadcrumb">RuangHadir <span>/</span> <strong>Profil saya</strong></div>
+            <div class="topbar-right">
+                <span class="top-date"><span class="online-dot"></span>Thursday, 23 Oct 2026</span>
+                <a class="top-avatar" href="profile.html" title="Profil Admin">A</a>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="page-heading">
+                <div>
+                    <span class="eyebrow">AKUN SAYA</span>
+                    <h1>Profil saya</h1>
+                    <p>Kelola informasi akun dan keamanan.</p>
+                </div>
+            </div>
+
+            <section class="panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>Informasi profil</h2>
+                        <p>Perbarui data diri dan kata sandi</p>
+                    </div>
+                </div>
+                <form class="form-stack" data-static-demo style="max-width:700px;">
+                    <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 12px;">
+                        <label>Nama lengkap<input name="name" value="Admin RuangHadir"></label>
+                        <label>Departemen<input name="department" value="Management"></label>
+                        <label>Jabatan<input name="position" value="Administrator"></label>
+                        <label>Kata sandi baru<input type="password" name="password" placeholder="Kosongkan jika tidak diubah"></label>
+                    </div>
+                    <button type="submit" class="button button-primary">Pratinjau simpan</button>
+                </form>
+                <p class="auth-note">Mode statis: perubahan profil tidak disimpan.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

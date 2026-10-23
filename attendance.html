@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kehadiran · RuangHadir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/app.css">
+    <script src="assets/app.js" defer></script>
+</head>
+<body class="app-page">
+    <aside class="sidebar" id="sidebar">
+        <a class="brand" href="dashboard.html"><span class="brand-mark">R</span><span>ruang<span class="brand-soft">hadir</span></span></a>
+        <div class="workspace-label">WORKSPACE</div>
+        <div class="workspace"><span class="workspace-dot"></span><span><strong>Tim utama</strong><small>Workspace aktif</small></span><span class="workspace-menu">⌄</span></div>
+        <nav class="main-nav" aria-label="Navigasi utama">
+            <span class="nav-label">MENU</span>
+            <a class="nav-link" href="dashboard.html"><span class="nav-icon">◫</span><span>Ikhtisar</span></a>
+            <a class="nav-link active" href="attendance.html"><span class="nav-icon">◷</span><span>Kehadiran</span></a>
+            <a class="nav-link" href="leave.html"><span class="nav-icon">▤</span><span>Izin &amp; cuti</span></a>
+            <a class="nav-link" href="employees.html"><span class="nav-icon">♧</span><span>Karyawan</span></a>
+            <a class="nav-link" href="reports.html"><span class="nav-icon">▥</span><span>Laporan</span></a>
+        </nav>
+        <div class="sidebar-bottom">
+            <div class="sidebar-help"><span class="help-icon">?</span><div><strong>Butuh bantuan?</strong><small>Hubungi admin tim kamu</small></div></div>
+            <a class="user-mini" href="profile.html"><span class="avatar">A</span><span class="user-mini-copy"><strong>Admin RuangHadir</strong><small>Administrator</small></span><span class="more">···</span></a>
+        </div>
+    </aside>
+
+    <div class="main-shell">
+        <header class="topbar">
+            <button class="icon-button menu-toggle" data-menu-toggle aria-label="Buka menu">☰</button>
+            <div class="breadcrumb">RuangHadir <span>/</span> <strong>Kehadiran</strong></div>
+            <div class="topbar-right">
+                <span class="top-date"><span class="online-dot"></span>Thursday, 23 Oct 2026</span>
+                <a class="top-avatar" href="profile.html" title="Profil Admin">A</a>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="page-heading">
+                <div>
+                    <span class="eyebrow">PANEL ADMIN</span>
+                    <h1>Kehadiran</h1>
+                    <p>Riwayat kehadiran yang tercatat.</p>
+                </div>
+            </div>
+
+            <section class="panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>Filter hari</h2>
+                        <p>Filter hanya tampilan demo; data contoh tidak berubah.</p>
+                    </div>
+                </div>
+                <form class="report-filter" data-static-demo>
+                    <div class="filter-row" style="display:flex; gap:12px; align-items:end; flex-wrap:wrap; margin-bottom:10px;">
+                        <label style="min-width:180px;">
+                            <span>Tanggal</span>
+                            <input type="date" value="2026-10-23">
+                        </label>
+                        <button class="button button-primary button-small" type="submit">Terapkan</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="panel attendance-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>Catatan kehadiran</h2>
+                        <p>Data absensi untuk 23 Oktober 2026</p>
+                    </div>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>KARYAWAN</th>
+                                <th>DEPARTEMEN</th>
+                                <th>TANGGAL</th>
+                                <th>JAM MASUK</th>
+                                <th>JAM PULANG</th>
+                                <th>STATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="person-cell"><span class="avatar avatar-small">A</span><span><strong>Amelia Putri</strong><small>EMP-101</small></span></div></td>
+                                <td>Marketing</td>
+                                <td>23 Oct 2026</td>
+                                <td class="time-cell">08:15</td>
+                                <td class="time-cell">17:00</td>
+                                <td><span class="status status-amber"><i></i>Terlambat</span></td>
+                            </tr>
+                            <tr>
+                                <td><div class="person-cell"><span class="avatar avatar-small">B</span><span><strong>Budi Santoso</strong><small>EMP-112</small></span></div></td>
+                                <td>IT</td>
+                                <td>23 Oct 2026</td>
+                                <td class="time-cell">07:55</td>
+                                <td class="time-cell">16:40</td>
+                                <td><span class="status status-green"><i></i>Hadir</span></td>
+                            </tr>
+                            <tr>
+                                <td><div class="person-cell"><span class="avatar avatar-small">C</span><span><strong>Citra Dewi</strong><small>EMP-118</small></span></div></td>
+                                <td>HR</td>
+                                <td>23 Oct 2026</td>
+                                <td class="time-cell">08:05</td>
+                                <td class="time-cell">17:15</td>
+                                <td><span class="status status-green"><i></i>Hadir</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
